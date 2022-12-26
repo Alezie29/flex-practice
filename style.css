@@ -10,6 +10,8 @@ body {
   background: white;
   color: #333;
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  display: flex;
+  flex-direction: column;
 }
 
   body {
@@ -28,7 +30,7 @@ body {
     border: none;
     border-radius: 8px;
     background: #eee;
-    padding: 8px;
+    padding: 8px 16px;
   }
   
   input {
@@ -42,6 +44,7 @@ body {
   li, a {
     list-style-type: none;
     text-decoration: none;
+    color: #666;
   }
 
   .header {
@@ -49,8 +52,6 @@ body {
   }
 
   .footer {
-    display: flex;
-    flex-direction: column;
     background-color: #eeeeee
   }
 
@@ -58,11 +59,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
   }
 
 .header, .footer {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 16px;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
