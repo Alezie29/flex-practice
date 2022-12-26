@@ -7,85 +7,62 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
+  background: white;
   color: #333;
-  /* I'll give you this one for free lol */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+}
+
+  body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+  }
+  
+  img {
+    width: 600px;
+  }
+  
+  button {
+    font-family: Roboto, sans-serif;
+    border: none;
+    border-radius: 8px;
+    background: #eee;
+    padding: 8px;
+  }
+  
+  input {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 8px 24px;
+    width: 400px;
+    margin-bottom: 16px;
+  }
+
+  li, a {
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .header {
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.header, .footer {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-}
-
-.modal {
-  background: white;
-  width: 480px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  padding: 2%;
-  display: flex;
-  gap: 16px;
-  padding: 16px;
-}
-
-.icon {
-  color: royalblue;
-  font-size: 26px;
-  font-weight: 700;
-  background: lavender;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.close-button {
-  background: #eee;
-  border-radius: 50%;
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-button {
-  padding: 8px 16px;
-  border-radius: 8px;
-  margin-top: 2%;
-}
-
-button.continue {
-  background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
-}
-
-button.cancel {
-  background: white;
-  border: 1px solid #ddd;
-  color: royalblue;
-}
-
-div.icon {
-text-align: left;
-margin: 5px;
-}
-
-.header {
-  display: flex;
-  font-size: larger;
-  font-weight: bold;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 8px;
-}
-
-.text {
-  margin-bottom: 16px;
+  padding: 1%;
 }
